@@ -31,12 +31,17 @@ function getRandomQuote() {
 function randomBackground() {
   var ranColor = Math.floor(Math.random() * 256)
   return ranColor;
-  console.log(ranColor);
 }
 
 //Print function
 
 function printQuote() {
+
+  var a = randomBackground();
+  var b = randomBackground();
+  var c = randomBackground();
+  var abcOfColors = "rgb(" + a + "," + b + "," + c + ")";
+
   var ranQuote = getRandomQuote();
   var htmlString = '<p class="quote">' + ranQuote.quote + '</p>' + '<p class="source">' + ranQuote.source;
     if ( ranQuote.hasOwnProperty('citation') ) {
@@ -45,9 +50,10 @@ function printQuote() {
     if ( ranQuote.hasOwnProperty('year') ) {
       htmlString += '<span class="year">' + ranQuote.year + '</span>';
      }
-     htmlString + '</p>';
+      htmlString + '</p>';
 
      document.getElementById('quote-box').innerHTML = htmlString;
+     document.body.style.backgroundColor = abcOfColors;
 }
 
 //EventHandler function
