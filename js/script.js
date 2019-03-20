@@ -28,7 +28,7 @@ function getRandomQuote() {
     return ranNum;
 }
 
-
+// Random background color function
 
 function randomBackground() {
   var ranColor = Math.floor(Math.random() * 256)
@@ -47,21 +47,24 @@ setTimeout(printQuote, 5000);
 
   var ranQuote = getRandomQuote();
   var htmlString = '<p class="quote">' + ranQuote.quote + '</p>' + '<p class="source">' + ranQuote.source;
+  //conditional checking citation property
     if ( ranQuote.hasOwnProperty('citation') ) {
       htmlString += '<span class="citation">' + ranQuote.citation + '</span>';
      }
+  //conditional checking year property
     if ( ranQuote.hasOwnProperty('year') ) {
       htmlString += '<span class="year">' + ranQuote.year + '</span>';
      }
+  //conditional checking tags property
     if ( ranQuote.hasOwnProperty('tags') ) {
        htmlString += '<span class="tags">' + ranQuote.tags + '</span>';
-      }
+     }
       htmlString + '</p>';
-
+  //formatted html string inside the body element
      document.getElementById('quote-box').innerHTML = htmlString;
+  //random color assigned
      document.body.style.backgroundColor = abcOfColors;
 }
-//printQuote();
-//EventHandler function
 
+//EventHandler function
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
