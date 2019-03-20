@@ -71,7 +71,7 @@ body {
   font-style: normal;
 }
 
-#tags:before {
+.tags:before {
   content: " - ";
   font-style: normal;
 }
