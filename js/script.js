@@ -65,6 +65,6 @@ setTimeout(printQuote, 5000);
   //random color assigned
      document.body.style.backgroundColor = abcOfColors;
 }
-
+printQuote();
 //EventHandler function
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
