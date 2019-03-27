@@ -39,7 +39,7 @@ function randomBackground() {
 
 function printQuote() {
 
-setInterval(printQuote, 7000);
+setTimeout(printQuote, 7000);
   var a = randomBackground();
   var b = randomBackground();
   var c = randomBackground();
