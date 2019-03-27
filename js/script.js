@@ -6,12 +6,12 @@ project 1 - A Random Quote Generator
 //Array of objects
 
 let quotes = [
-  { quote: "I'm so fly, when i driveby!", source: "Celso" },
-  { quote: "Bum, bum bum ..bum ..bum", source: "Salman", citation: "Twitter", year: "2000", tags: "Funny quote" },
-  { quote: "On top of the world", source: "Celso" },
-  { quote: "Night time takes so long", source: "Muhammad" },
-  { quote: "Baba", source: "jannaat", citation: "Facetime", year: "1990" },
-  { quote: "Honey, your so sweet", source: "Majida", citation: "WhatsApp", year: "2019" },
+  { quote: "Lord, make me an instrument of thy peace. Where there is hatred, let me sow love.", source: "Francis of Assisi" },
+  { quote: "If you cannot do great things, do small things in a great way.", source: "Napoleon Hill", citation: "Brainyquote", year: "2000", tags: "Inspirational quote" },
+  { quote: "Carry out a random act of kindness, with no expectation of reward, safe in the knowledge that one day someone might do the same for you.", source: "Princess Diana" },
+  { quote: "Night time takes so long, my son protesting sleep", source: "Rayyan" },
+  { quote: "Honesty is the first chapter in the book of wisdom.", source: "Thomas Jefferson", citation: "Goggle", year: "1990" },
+  { quote: "Honesty is the best policy", source: "Celso", citation: "WhatsApp", year: "2019" },
   { quote: "Nothing is impossible, the word itself says “I’m possible”!", source: " Audrey Hepburn" },
   { quote: "Perfection is not attainable, but if we chase perfection we can catch excellence.", source: "Vince Lombardi", citation: "Google", year: "2019", tags: "Inspirational quote" },
   { quote: "I am not a product of my circumstances. I am a product of my decisions.", source: "Stephen Covey" },
